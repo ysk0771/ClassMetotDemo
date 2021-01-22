@@ -9,8 +9,9 @@ namespace ClassMetotDemo
         static string a = "Müsteri silindi!!!";
         static string b = "Müşteri eklendi!!!";
 
-        public static void ekle(Musteri i, int id, string ad, string soyad)
+        public static void ekle(Musteri i,  string id, string ad, string soyad)
         {
+            
             i.id = id;
             i.ad = ad;
             i.soyad = soyad;
@@ -19,7 +20,7 @@ namespace ClassMetotDemo
         }
         public static void sil(Musteri i)
         {
-            i.id = -2;
+            i.id = null;
 
             i.ad = null;
 
